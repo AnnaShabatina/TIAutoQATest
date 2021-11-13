@@ -13,7 +13,6 @@ namespace Test
         static double FindLength(double Ax, double Bx, double Ay, double By)
         {
             double d = Pow2(Ax - Bx);
-
             double d2 = Pow2(Ay - By);
 
             return (double)Math.Sqrt(d + d2);
@@ -90,13 +89,13 @@ namespace Test
                 Console.WriteLine($"Triangle IS NOT 'Isosceles'");
             }
 
-           double CB2 = Pow2(CB);
-           double AB2 = Pow2(AB);
-           double CA2 = Pow2(CA);
-           double delta = 0.9;
-           double M = AB2 - CB2 - CA2;
-           double M2 = CA2 - AB2 - CB2;
-           double M3 = CB2 - AB2 - CA2;
+            double CB2 = Pow2(CB);
+            double AB2 = Pow2(AB);
+            double CA2 = Pow2(CA);
+            double delta = 0.9;
+            double M = AB2 - CB2 - CA2;
+            double M2 = CA2 - AB2 - CB2;
+            double M3 = CB2 - AB2 - CA2;
 
             if (M <= delta || M2 <= delta|| M3 <= delta)
             {
